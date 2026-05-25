@@ -1,0 +1,349 @@
+.main {
+  padding: 0 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header / Nav */
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.navLinks a:hover {
+  color: var(--text-primary);
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-cloud);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  max-width: 700px;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.2);
+  border-radius: 4px;
+  color: var(--accent-ai);
+  font-size: 0.95rem;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryBtn {
+  background: var(--text-primary);
+  color: var(--background);
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+}
+
+.secondaryBtn {
+  border: 1px solid var(--border);
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.secondaryBtn:hover {
+  background: var(--surface);
+}
+
+/* Pillars Section */
+.section {
+  padding: 6rem 0;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.pillarCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  border-radius: 8px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.pillarCard:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.pillarTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.pillarDesc {
+  font-size: 0.95rem;
+}
+
+/* Specific Accent Colors for Pillars */
+.pillarCard:nth-child(1) .iconWrapper { background: rgba(6, 182, 212, 0.1); color: var(--accent-cloud); }
+.pillarCard:nth-child(2) .iconWrapper { background: rgba(245, 158, 11, 0.1); color: var(--accent-iot); }
+.pillarCard:nth-child(3) .iconWrapper { background: rgba(129, 140, 248, 0.1); color: var(--accent-ai); }
+
+/* Work / Case Studies Section */
+.workGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.workCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.workContent {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.workVisual {
+  background: linear-gradient(135deg, var(--surface-hover), var(--background));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-left: 1px solid var(--border);
+}
+
+.workTitle {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+}
+
+.workTags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+}
+
+.workLink {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-cloud);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.workLink:hover {
+  text-decoration: underline;
+}
+
+/* Trajectory Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: var(--border);
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 4rem;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -4.5px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-iot);
+  box-shadow: 0 0 15px var(--accent-iot);
+}
+
+.timelineDate {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-iot);
+  margin-bottom: 0.5rem;
+}
+
+.timelineTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timelineCompany {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timelineDesc {
+  font-size: 0.95rem;
+  max-width: 600px;
+}
+
+.timelineDesc ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.timelineDesc li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 6rem 0 3rem 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .workCard {
+    grid-template-columns: 1fr;
+  }
+  .workVisual {
+    height: 200px;
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .hero {
+    padding: 2rem 0 4rem 0;
+  }
+  .ctaGroup {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
