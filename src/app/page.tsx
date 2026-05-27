@@ -155,16 +155,16 @@ export default function Home() {
           <div className={styles.workCard}>
             <div className={styles.workContent}>
               <div className={styles.eyebrow}>AI-Native SDLC</div>
-              <h3 className={styles.workTitle}>Agentic Modernization Demo</h3>
-              <p>Refactoring legacy C drivers to MISRA-C:2023 standards at 2x speed using AI-native workflows.</p>
+              <h3 className={styles.workTitle}>Safety-Critical Automation</h3>
+              <p>Deterministic 60-second audits and MISRA-C:2012 modernization of legacy firmware stacks.</p>
               <div className={styles.workTags}>
-                <span className={styles.tag}>Gemini CLI</span>
-                <span className={styles.tag}>Claude Code</span>
-                <span className={styles.tag}>MISRA C</span>
+                <span className={styles.tag}>CLI Trace Proof</span>
+                <span className={styles.tag}>MISRA C Audit</span>
+                <span className={styles.tag}>IEC 62304</span>
                 <span className={styles.tag}>AI-SDLC</span>
               </div>
-              <a href="https://github.com/nayan100/ai-native-modernization-demo" target="_blank" className={styles.workLink}>
-                Explore Workflow <ArrowRight size={16} />
+              <a href="https://github.com/nayan100/safety-critical-automation" target="_blank" className={styles.workLink}>
+                View Live Audit Trace <ArrowRight size={16} />
               </a>
             </div>
             <div className={styles.workVisual}>
